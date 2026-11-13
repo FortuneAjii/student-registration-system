@@ -1,0 +1,50 @@
+body{
+    background-color: #eceef1;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 20px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  
+}
+th {
+  background: #eee;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 10px;
+  color: #888;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.action-btn:hover {
+  color: #1f4e9c;
+}
+
+.action-btn.delete:hover {
+  color: #b3261e;   /* red only when pointed at */
+}
+
+#search {
+  padding: 0.5rem 0.7rem;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 320px;
+  border: 1.5px solid #9fb0c7;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  th, td { font-size: 0.9rem; padding: 0.5rem; }
+  #search { width: 100%; max-width: none; }
+}

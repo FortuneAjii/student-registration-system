@@ -1,0 +1,126 @@
+body{
+    background-color: #eceef1;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+h1{
+    font-size: 30px;
+    margin: 0 0 0.5rem 0; 
+}
+p{
+    margin-left: 20px;
+    color:#ffffff;
+    
+    text-align:center;
+    margin: 15px 0 0.5rem 0; 
+}
+label{
+     margin: 0 0.5rem 0 0;
+     font-size: 15px;
+     text-align: center;
+}
+button[type="button"]{
+    margin-left: 10px;
+    margin-bottom: 100px;
+    
+    background-color:  #003d73;
+    font-weight:700;
+    color:#ffffff;
+    border-color: #ffffff;
+    border-style:solid;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+.regbutton{
+    background-color: #003d73;
+    color:#ffffff ;
+    font-size: 15px;
+    font-weight: 400;
+    border-style: solid;
+    border:none ;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.card{
+    background-color: #ffffff;
+    display:flex;
+    
+    width: fit-content;
+    margin: 150px;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: left;
+    align-items: center;
+    border-radius: 10px;
+}
+.left{
+    background-color: #ffffff;
+    margin-left: 2%;
+}
+
+.right{
+    background-color: #00437f;
+    min-height: 80vh;
+    text-align: left;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* ---------- TABLETS (iPad and similar, up to 900px) ---------- */
+@media (max-width: 900px) {
+  .card {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .side { width: 260px; }
+  h1 { font-size: 1.8rem; }
+}
+
+
+/* ---------- PHONES (iPhones and Android, up to 600px) ---------- */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;     /* start at the top so the form isn't cut off */
+    padding: 0.75rem;
+  }
+
+  .card {
+    flex-direction: column;      /* stack: form first, info below */
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .side { width: 100%; }
+
+  h1 { font-size: 1.5rem; }
+  h3 { font-size: 1.1rem; }
+
+  input, select { max-width: 100%; }   /* fields use the full width */
+
+  label { display: block; margin: 0.75rem 0 0.25rem; }
+
+  .regbutton {
+    width: 100%;                 /* big full-width button */
+    padding: 0.8rem;
+  }
+}
+
+
+/* ---------- SMALL IPHONES (SE, mini, up to 380px) ---------- */
+@media (max-width: 380px) {
+  h1 { font-size: 1.3rem; }
+  .card { padding: 1rem; }
+}
+
+
+/* ---------- LANDSCAPE PHONES (short screens) ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  body { align-items: flex-start; }
+}
