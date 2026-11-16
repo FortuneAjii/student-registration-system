@@ -54,7 +54,6 @@ button[type="button"]{
     width: fit-content;
     margin: 150px;
     justify-content: center;
-    min-height: 80vh;
     text-align: left;
     align-items: center;
     border-radius: 10px;
