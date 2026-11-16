@@ -1,7 +1,8 @@
 body{
     background-color: #eceef1;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
+    align-items: center;       
+    justify-content: center;
 }
 h1{
     font-size: 30px;
