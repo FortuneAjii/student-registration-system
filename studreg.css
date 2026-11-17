@@ -3,6 +3,7 @@ body{
   background-color: #eceef1;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     place-items: center;
+     min-height: 100vh;
     padding-top: 120px;
 }
 h1{
@@ -92,7 +93,7 @@ button[type="button"]{
 
 
 /* ---------- PHONES (iPhones and Android, up to 600px) ---------- */
-@media (max-width: 600px) {
+@media ( orientation: potrait, max-width: 600px) {
   body {
     align-items: flex-start;    
     padding: 100px;
