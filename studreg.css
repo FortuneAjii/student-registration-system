@@ -48,31 +48,35 @@ button[type="button"]{
     padding: 10px;
 
 }
-.card{
-    background-color: #ffffff;
-    display:flex;
-    height:auto;
-    width: fit-content;
-    margin: 150px;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    border-radius: 10px;
-}
-.left{
-    background-color: #ffffff;
-    margin-left: 2%;
-    margin-top: 0;
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;    /* both panels start at the top, so the heading and Show Info line up */
+  gap: 1.5rem;
+  width: fit-content;         /* as wide as its content */
+  max-width: 95%;
+  height: auto;               /* as tall as its content */
+  min-height: 0;              /* this replaces the old 80vh */
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
 }
 
-.right{
-    background-color: #00437f;
-    min-height: 80vh;
-    text-align: left;
-    align-items: center;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-top: 1rem;
+.left {
+  display: block;             /* no vertical centring inside */
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.left h1 { margin-top: 0; }
+
+.right {
+  flex: 0 0 220px;
+  height: fit-content;        /* the blue panel is only as tall as its own content */
+  padding: 1rem;
+  background: #00437f;
+  color: #fff;
+  border-radius: 10px;
 }
 
 /* ---------- TABLETS (iPad and similar, up to 900px) ---------- */
